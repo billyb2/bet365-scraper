@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: bet365
+Version: 0.0.3
+Summary: ninja25538@tutanota.de
+Home-page: https://github.com/billyb2/bet365-scraper
+Author: William Batista
+Author-email: ninja25538@tutanota.de
+License: UNKNOWN
+Description: # Bet365-Scraper
+        This is a pretty simple Bet365 scraper using Selenium + Beautiful Soup. It can get the odds of any player from any currently running match
+        
+        <b>Requirements:</b>
+        * beautifulsoup4
+        * selenium
+        * soupsieve
+        * urllib3
+        
+        <p>While the latest versions of all of these should be compatible, using the versions listed in the req.txt file are guaranteed to work</p>
+        
+        ## Installation instructions
+        ### Building from source
+        To install from source, simply clone this repository and then run
+        
+        `python bet365/setup.py install`
+        
+        ### For Windows
+        1. Install Chrome Beta using the install file in the repo
+        2. Install dependencies by running `pip install -r req.txt`
+        3. Include the get_data function by having `from scrape import *` in your program
+        4. Use the `get_odds_data` function to retrieve data from any currently running game. Add True or False to whether to include debug info. to have certain commands print 
+        
+        Alternatively you can just install the scraper using pip by running
+        
+        `python -m pip install bet365`
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

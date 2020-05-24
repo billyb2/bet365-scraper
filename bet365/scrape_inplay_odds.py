@@ -30,7 +30,7 @@ driver.implicitly_wait(30)
 driver.add_cookie({'name': 'aps03', 'value': 'cf=N&cg=3&cst=0&ct=198&hd=N&lng=32&oty=2&tzi=2', 'sameSite': 'Lax'})
 
 
-def get_data(game, debug):
+def get_odds_data(game, debug):
     driver.add_cookie({'name': 'aps03', 'value': 'cf=N&cg=3&cst=0&ct=198&hd=N&lng=32&oty=2&tzi=2', 'sameSite': 'Lax'})
     driver.refresh()
     driver.add_cookie({'name': 'aps03', 'value': 'cf=N&cg=3&cst=0&ct=198&hd=N&lng=32&oty=2&tzi=2', 'sameSite': 'Lax'})

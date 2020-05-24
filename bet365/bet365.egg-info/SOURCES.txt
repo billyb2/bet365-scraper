@@ -1,0 +1,6 @@
+README.md
+setup.py
+bet365.egg-info/PKG-INFO
+bet365.egg-info/SOURCES.txt
+bet365.egg-info/dependency_links.txt
+bet365.egg-info/top_level.txt

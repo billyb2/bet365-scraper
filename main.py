@@ -1,4 +1,4 @@
-from scrape import *
+from bet365 import *
 import time
 import sys
 import os
@@ -12,7 +12,7 @@ def removekey(d, key):
 
 while True:
     os.system('cls')
-    data = get_data("Table Tennis", False)
+    data = get_odds_data("Table Tennis", False)
     newData = data
     foundInBetween = False
 
