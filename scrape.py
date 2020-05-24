@@ -39,7 +39,8 @@ def get_data(game, debug):
         print('Getting ' + game + ' data...')
 
         try:
-            driver.find_element_by_xpath("//div[text()=\'"+game+"\']").click()
+            driver.refresh()
+            driver.find_element_by_xpath("//div[text()=\'" + game + "\']").click()
             print('Waiting for page to load...')
             driver.find_element_by_class_name("ovm-ParticipantOddsOnly_Odds")
             soup = BeautifulSoup(driver.page_source, 'html.parser')
@@ -63,10 +64,12 @@ def get_data(game, debug):
 
         except:
             print("Something went wrong, though I don't know what!")
+            return None
+
     else:
         try:
-            driver.find_element_by_xpath("//d"
-                                         "iv[text()=\'" + game + "\']").click()
+            driver.refresh()
+            driver.find_element_by_xpath("//div[text()=\'" + game + "\']").click()
             driver.find_element_by_class_name("ovm-ParticipantOddsOnly_Odds")
             soup = BeautifulSoup(driver.page_source, 'html.parser')
             players = soup.find_all('div', class_='ovm-FixtureDetailsWithIndicators_Team')

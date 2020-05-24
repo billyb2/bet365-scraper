@@ -1,5 +1,5 @@
 # Bet365-Scraper
-This is a pretty simple Bet365 scraper using Selenium + Beautiful Soup. While it currently only gets table tennis odds, it can be easily modified.
+This is a pretty simple Bet365 scraper using Selenium + Beautiful Soup. It can get the odds of any player from any currently running match
 
 <b>Requirements:</b>
 * beautifulsoup4
@@ -13,4 +13,5 @@ This is a pretty simple Bet365 scraper using Selenium + Beautiful Soup. While it
 ### For Windows
 1. Install Chrome Beta using the install file in the repo
 2. Install dependencies by running `pip install -r req.txt`
-3. That's it! Just run `python scrape.py` and watch those odds start rolling in
+3. Include the get_data function by having `from scrape import *` in your program
+4. Use the `get_data` function to retrieve data from any currently running game. Add True or False to whether to include debug info. to have certain commands print 
