@@ -1,6 +1,8 @@
 # Bet365-Scraper
 This is a pretty simple Bet365 scraper using Selenium + Beautiful Soup. It can get the odds of any player from any currently running match
 
+## WARNING: This currently only works on Windows. With some modification, it can be made to work on Linux (make a pull request!)
+
 <b>Requirements:</b>
 * beautifulsoup4
 * selenium
@@ -11,7 +13,11 @@ This is a pretty simple Bet365 scraper using Selenium + Beautiful Soup. It can g
 
 ## Installation instructions
 ### Building from source
-To install from source, simply clone this repository and then run
+To install from source, simply clone this repository. First, install the requirements:
+
+`python3 -m pip install -r req.txt`
+
+Then, install it:
 
 `python bet365/setup.py install`
 

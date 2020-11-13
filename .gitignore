@@ -1,1 +1,5 @@
-.idea
+.idea/
+venv/
+*.pyc
+
+bet365/__pycache__/

@@ -3,4 +3,4 @@ bet365==0.0.3
 playsound==1.2.2
 selenium==3.141.0
 soupsieve==2.0.1
-urllibp3==1.25.9
+urllib3==1.25.9
